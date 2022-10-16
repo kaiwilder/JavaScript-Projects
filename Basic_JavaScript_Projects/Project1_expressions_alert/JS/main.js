@@ -26,3 +26,7 @@ document.write(3+3); //an example of a statement
 var Sent1 = "This is the beginning of the string" //This is an expression
 var Sent2 =  " and this is the end of the string"
 document.write(Sent1 + Sent2) //This statement prints the above variables concatenated
+
+function myFunction() {
+    document.getElementById("demo").innerHTML = "You copied this text!"
+} //string appears when you copy the specified text in the html document
