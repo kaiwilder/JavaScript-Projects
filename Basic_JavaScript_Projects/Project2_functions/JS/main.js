@@ -8,3 +8,9 @@ function myFunction() {
     sentence += " a lot in this course!";
     document.getElementById("Concatenate").innerHTML = sentence;
 }//concatenating a string with +=
+
+function Thisguy() {
+    var sure = "I only know how to call strings";
+    document.getElementById("yeah").innerHTML = sure;
+}
+
