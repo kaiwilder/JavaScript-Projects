@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+        <script>
+            $(document).ready(function() {
+                $("html").append(   //.append adds the following code into the html document
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragragh 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                </body>"
+                );
+                $("#2").css({"color":"red"})    //targets p id=2 to be red 
+                $("#3").click(function() {  //when clicked the h1 element is hidden
+                    $('h1').hide();
+                });
+                $("#1").mouseover(function() {  //when moused over p1 turns red
+                    $("#1").css({"color":"red"});
+                });
+                $("#2").click(function() {  //when clicked the hidden element h1 becomes visible again
+                    $('h1').toggle();
+                });
+            });
+        </script>
+</html>
