@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            @keyframes zoom {
+                0% {
+                    transform: scale(1,1);
+                }
+                50% {
+                    transform: scale(1.2,1.2);
+                }
+                100% {
+                    transform: scale(1,1);
+                }
+            }
+
+            .lights {
+                animation: zoom 15s forwards;
+                display:block;
+                margin-top: 50px;
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="img_lights.jpg" class="lights">
+    </body>
+</html>

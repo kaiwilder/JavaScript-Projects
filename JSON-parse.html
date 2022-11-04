@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="myCat2"></p>
+
+        <script>
+            var cat2 = '{"name": "Marcy", "breed": "Domestic", "color":"Black"}';
+            var JSONstring = JSON.parse(cat2);
+            document.getElementById("myCat2").innerHTML = JSONstring.name + " the " + JSONstring.breed;
+        </script>
+    </body>
+</html>

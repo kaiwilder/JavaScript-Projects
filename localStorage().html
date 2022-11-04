@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="myCat"></p>
+
+        <script>
+            localStorage.setItem("Name", "Marcy");
+            document.getElementById("myCat").innerHTML = localStorage.getItem("Name");
+        </script>
+    </body>
